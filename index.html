@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark light</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" >
+    <h1>Dark/Light Theme Chooser</h1>
+<div>
+   
+    <img src="night-mode.png"   class="icon active" id="dark-img" onclick="darkMode()">
+    <img src="day-mode.png"    class="icon "  id="light-img" onclick="lightMode()" >
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, soluta dignissimos nobis deserunt rerum ad maxime facilis consequatur suscipit? Dolore voluptatibus ipsa ut cum iusto voluptatem illo reiciendis expedita doloribus?
+    </p>
+
+</div>
+<script>
+    function darkMode(){
+        const imgDark= document.getElementById("dark-img");
+        imgDark.classList.add("active");
+
+        const imgLight= document.getElementById("light-img");
+        imgLight.classList.remove("active");
+
+        const bodyElement= document.getElementById("body");
+        bodyElement.className = "theme-dark";
+    }
+
+    function lightMode(){
+        const imgDark= document.getElementById("dark-img");
+        imgDark.classList.remove("active");
+
+        const imgLight= document.getElementById("light-img");
+        imgLight.classList.add("active");
+
+        const bodyElement= document.getElementById("body");
+        bodyElement.className = "theme-light";
+
+    }
+</script>
+
+
+
+</body>
+</html>

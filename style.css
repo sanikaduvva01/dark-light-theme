@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+ }
+ .icon{
+      height:30px;
+      width: 30px;
+     cursor: pointer;
+     padding: 2px;
+     border-radius: 5px;
+     background-color: #fff;
+ }
+
+ .active{
+      border:1px solid #000;
+     
+    
+ }
+
+ .theme-dark{
+     background-color: #000;
+     color:#fff;
+
+ }
+
+ .theme-light{
+     background-color: plum;
+     color:#000;
+
+ }
